@@ -2,6 +2,7 @@
 String title=  "Click for another circle.";
 String subtitle=  "Press any key to erase.";
 String author=  "Bruce Alan Martin";
+String name= "Josh's Monster";
 
 // GLOBAL VARIABLES //
 float x,y;
@@ -14,6 +15,9 @@ void setup() {
   y=  height/2;
   w=  80;          // width of ellipse.
   h=  80;          // height of ellipse
+  text( name, 100, 100);
+  ellipse(width/2, height/2, 40, 40) ;
+  
 }
 
 // Next frame. //
@@ -22,6 +26,8 @@ void draw() {
   text( subtitle, width/2, 10 );
   text( author, 10, height-10 );
   text( w+"x"+h, width/2,height-10 );
+  text( name, 100, 100);
+  ellipse(width/2, height/2, 40, 40) ;
   //
   ellipse(x, y, w, h);
 }
